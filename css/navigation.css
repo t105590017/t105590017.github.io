@@ -1,0 +1,34 @@
+
+section {
+    width: 990px;
+    padding: 20px 40px;
+    margin: 0 auto;
+    }
+    section>h1 {
+        color: #e87563;
+    }
+    .site a {
+        position: relative;
+    }
+    .site .box {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        width: 200px;
+        }
+        .box>a {
+            display: block;
+            background-color: #e87563;
+            color: #fff;
+            padding: 10px;
+        }
+        .box>ul {
+            padding: 10px;
+            background-color: #fff;
+            }
+            .box>ul li {
+                color: #303030;
+                padding-left: 2px;
+                margin: 5px 0;
+            }

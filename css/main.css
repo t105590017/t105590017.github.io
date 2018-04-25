@@ -1,0 +1,169 @@
+html, body, div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+   
+    font-family: 微軟正黑體, Arial, Verdana, Helvetica, sans-serif;
+}
+body {
+    background-color: #f0ede5;
+}
+img {
+    height: 100%;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 122px;
+    background-color: cadetblue;
+    }
+    .top {
+        width: 100%;
+        height: 62px;
+        background-color: #333230;
+        color: #A59D8E;
+        }
+        .topbox {
+            width: 980px;
+            height: 62px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            position: relative;
+            }
+            .topbox .logo {
+                float: left;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: auto;
+            }
+            .topmenu {
+                right: 0;
+                float: none;
+                position: absolute;
+                top: 0;
+                text-align: left;
+                height: 62px;
+                width: 72%;
+                line-height: 31px;
+                }
+                .topmenu .menu {
+                    display: inline-block;
+                    margin: auto;
+                }
+                .topmenu li {
+                    padding: 0 13px;
+                    margin-left: -3px;
+                    display: inline-block;
+                    color: #A59D8E;
+                }
+                .topmenu .language {
+                    display: inline-block;
+                   
+                    margin-top: 15px;
+                    }
+                    .topmenu .language a {
+                        color: #fff;
+                    }
+                .topmenu .icon{
+                    display: inline-block;
+                    height: 30px;
+                    width: 30px;
+                    margin: 15px;
+                    vertical-align: top;
+                }
+    nav {
+        margin: 0 auto;
+        position: relative;
+        margin: 0 auto;
+        width: 1002px;
+        height: 60px;
+        background-color: cadetblue;
+        z-index: 40;
+        }
+        nav ul {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        nav li {
+            padding: 0;
+            line-height: 30px;
+            display: inline-block;
+            color: #fff;
+            font-size: 20px;
+            padding: 15px 40px;
+            text-align: center;
+        }
+        nav .separate {
+            border-right: 1px solid #fff;
+        }
+    footer {
+        background-color: #6e6a61;
+        }
+        footer .shareall {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 30px;
+            text-align: center;
+            background-color: #ABA69B;
+            clear: both;
+            }
+            footer .shareword {
+                color: #fff;
+                font-size: 170%;
+                margin-bottom: 30px;
+            }
+            footer .shareall li {
+                display: inline-block;
+            }
+            footer .shareall img {
+                margin: 0 10px;
+                height: 60px;
+            }
+        .footermenu_title {
+            width: 980px;
+            height: 250px;
+            margin: 0 auto;
+            padding-top: 30px;
+            }
+            .footermenu_title>li {
+                position: relative;
+                display: inline-block;
+                margin-left: 0;
+                }
+                .footermenu_title li>a {
+                    color: #ded6;
+                    padding: 10px 20px 10px 10px;
+                    box-sizing: border-box;
+                    width: 160px;
+                    display: inline-block;
+                    }
+                    .footermenu_item {
+                        padding: 0 0 0 20px;
+                        position: absolute;
+                        }
+                        .footermenu_item li>a {
+                            color: #fff;
+                            margin: 0;
+                            padding: 5px 10px 0 10px;
+                            border-left: 1px solid #f90;
+                        }
+        .information {
+            background: url("../images/logo.png")top left no-repeat;
+            background-size: 15%; 
+            padding: 50px 0 0 300px;
+            height: 150px;
+            color: #fff;
+            }
+            .information span{
+                color: #f90;
+            }

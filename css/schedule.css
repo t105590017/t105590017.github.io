@@ -1,0 +1,77 @@
+.content {
+    width: 100%;
+    background: #21BDFF;
+    color: #fff;
+    text-align: center;
+    }
+    .viewMain {
+        width: 980px;
+        margin: 0 auto;
+    }
+    .viewMain h1 {
+        margin: 0;
+        font-size: 40px;
+        padding-right: 700px;
+        padding-top: 50px;
+    }
+    .firstDay {
+        padding: 0;
+        margin: 0;
+        width: 100px;
+        height: 70px;
+        font-size: 30px;
+        background: url("../images/pointTop.png") top left no-repeat;
+        background-size: 70px auto;
+        padding-top: 5px;
+        padding-left: 60px;
+    }
+    .secondDay {
+        padding: 0;
+        margin-top: -20px;
+        width: 100px;
+        height: 70px;
+        font-size: 30px;
+        background: url("../images/pointMid.png")  left no-repeat;
+        background-size: 70px auto;
+        padding-top: 30px;
+        padding-left: 60px;
+    }
+    .finalDay {
+        padding: 0;
+        margin-top: -70px;
+        width: 100px;
+        height: 70px;
+        font-size: 30px;
+        background: url("../images/pointBot.png")  left no-repeat;
+        background-size: 70px auto;
+        padding-top: 30px;
+        padding-left: 60px;
+    }
+    .Stroke {
+        padding: 10px;
+    }
+    .dayStroke {
+        background: url(../images/lineV.png) left repeat-y;
+        background-size: 70px;
+        margin-left: 0px;
+        padding-left: 100px;
+        padding-bottom: 30px;
+        width: 85%;
+        text-align: left;
+    }
+    .dayStroke a>div {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #fff;
+        width: 100%;
+        height: 170px;
+    }
+    .dayStroke div>div {
+        margin-top: -15px;
+        float: right;
+        width: 63%;
+    }
+    .dayStroke img {
+        float: left;
+        width: 32%;
+    }
