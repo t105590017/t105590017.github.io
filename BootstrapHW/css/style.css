@@ -1,0 +1,182 @@
+body {
+    width: 1440px;
+    margin: 0 auto;
+    font-family: "Microsoft JhengHei";
+}
+.line {
+    height: 0;
+    width: 64px;
+    border: 1px solid;
+    border-color: #D7AC41;
+    margin: 0 auto;
+}
+.page_title {
+    font-size: 50px;
+    font-weight: 600;
+    color: #4A494B;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.content {
+    margin: 0 auto;
+}
+nav{
+    height: 130px;
+    padding: 0;
+    }
+    .logo_position {
+        margin-left: 44px;
+    }
+    .nav_list {
+        flex-direction: row;
+        margin-right: 24px;
+    }
+    .nav_list li{
+        margin-right: 30px;
+    }
+    .nav_list a {
+        font-size: 14px;
+        color: #6C6C6C;
+    }
+    .active > .nav-link {
+        color: #D7AC41;
+    }
+.top_banner {
+    height: 782px;
+    background-image: url("../img/top-banner.jpg");
+    }
+    header .bigtitle {
+        margin-top: 335px;
+        font-size: 80px;
+        font-weight: 600;
+        letter-spacing: 10px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    header .smatitle {
+        font-size: 24px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+.about_page {
+    height: 754px;
+    background-image: url("../img/about-bg.jpg");
+    }
+    .about_page .content {
+        width: 770px;
+    }
+    .about_icon {
+        width: 120px;
+        height: 120px;
+        margin: 100px 320px 40px 320px;
+    }
+    .content span {
+        font-size: 24px;
+        font-weight: 300;
+    }
+    .about_page p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.62;
+        margin: 0;
+    }
+    .about_page .line {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+.service_page {
+    height: 667px;
+    background-image: url("../img/service-bg.jpg");
+    }
+    .service_page .line {
+        margin-top: 100px;
+    }
+    .service_page .col-xl-3 {
+        padding: 15px;
+    }
+    .service_item {
+        width: 270px;
+        height: 60px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border: 0;
+        border-radius: 0;
+        padding: 15px;
+        font-size: 16px;
+        color: #6C6C6C;
+    }
+.member_page {
+    background-color: white;
+    }
+    .member_page .line {
+        margin-top: 100px;
+    }
+    .member_inf {
+        width: 1170px;
+    }
+    .member_page .card {
+        border: 0;
+    }
+    .member_page img {
+        width: 270px;
+    }
+    .member_page .col-md-6 {
+        padding: 0;
+        margin: 0;
+    }
+    .member_page .card-body {
+        width: 300px;
+        background-color: #F6F7F8;
+    }
+    .card {
+        width: 570px;
+        height: 400px;
+    }
+    .card .title {
+        font-size: 50px;
+        font-weight: 600;
+        color: #4A494B;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .card .member_stitle {
+        font-size: 16px;
+        font-weight: 300;
+        margin: 9px auto 9px 10px;
+    }
+    .member_expertise {
+        margin: 7px auto 20px 10px;
+    }
+    .card-body > p {
+        margin-left: 10px;
+    }
+    .member_page .btn_bor {
+        height: 60px;
+        width: 270px;
+        font-size: 16px;
+        border: 1px solid;
+        color: #D7AC41;
+        margin: 60px auto 100px;
+        line-height: 45px;
+    }
+
+.footer_page {
+    height: 437px;
+    background-image: url("../img/footer-bg.jpg");
+    }
+    .footer_page .line {
+        margin-top: 100px;
+        margin-left: 0;
+    }
+    .footer_page p {
+        margin-left: -15px;
+        font-size: 16px;
+        color: #4A494B;
+    }
+footer {
+    height: 48px;
+    background-color: #2b2c2c;
+    line-height: 48px;
+}
+
+    
+
+
