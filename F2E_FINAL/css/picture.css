@@ -1,0 +1,49 @@
+article{
+    background-color: #39537D;
+}
+.content{
+    margin: 0 auto;
+    padding: 0;
+    width: 980px;
+}
+h1 {
+    font-size: 210%;
+    padding-left: 100px;
+    padding-top: 30px;
+    margin: 0;
+    color: #fff;
+}
+.picturelist {
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    margin: 0px auto 0px auto;
+    text-align: center;
+    vertical-align: top;
+}
+.picturelist li{
+    display: inline-block;
+    margin: 30px 22px 20px 22px;
+    padding: 0px 0px 0px 0px;
+    color: #FFF;
+}
+.picturelist li img {
+    box-sizing: border-box;
+    width: 260px;
+    height: 160px;
+    border: 2px rgba(255,255,255,0.5) solid;
+}
+.picturelist li a {
+    color: #FFF;
+}
+.download a{
+    display: inline-block;
+    font-size: 84%;
+    width: 110px;
+    margin: 6px 6px 6px 6px;
+    background-color: #516686;
+    border-radius: 4px;
+    text-align: center;
+    colar:#FFF;
+}

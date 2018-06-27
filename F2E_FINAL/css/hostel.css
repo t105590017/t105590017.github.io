@@ -1,0 +1,98 @@
+article{
+    background-color: rgba(255,242,200);
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    color: #e87563;
+    text-align: center;
+    }
+    .viewMain {
+        width: 980px;
+        margin: 0 auto;
+    }
+    .viewMain h1 {
+        margin: 0;
+        font-size: 30px;
+        padding-right: 550px;
+        padding-top: 50px;
+    }
+    .viewMain p {
+        width: 700px;
+        padding-top: 10px;
+        padding-left: 80px;
+        color: black;
+        margin: 0 auto;
+        text-align: left;
+        padding-bottom: 30px;
+    }
+h1 {
+    font-size: 250%;
+    padding-left: 100px;
+    padding-top: 30px;
+    margin: 0;
+    color: #000;
+}
+#map {
+    height: 400px;
+    width: 1280px;
+    margin: 0px auto;
+}
+
+.content-container {
+    width: 100%;
+    display: inline-block;
+}
+
+.picturelist {
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    
+    margin: 0px auto 0px auto;
+    vertical-align: top;
+}
+.picturelist li{
+    display: inline-block;
+    margin: 30px 22px 20px 22px;
+    padding: 0px 0px 0px 0px;
+    color: #000;
+}
+.picturelist li img {
+    box-sizing: border-box;
+    width: 270px;
+    height: 175px;
+    border: 4px rgba(125,0,0,0.5) solid;
+}
+.picturelist li a {
+    color: #FFF;
+}
+.detail{
+    height: 150px;
+    overflow: hidden;
+    padding-bottom: 20px;
+    position: relative;
+    width:260px;
+    height:200px;
+    background-color: #D5D8DC;
+    border-radius: 3px;
+    padding: 0px 6px 0px 6px;
+    margin-right: 2px;
+}
+.price-Range{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+}
+.score-span{
+    color: #FFFFFF;
+    background-color: #20AEA1;
+    border-radius: 3px;
+    padding: 0px 6px 0px 6px;
+    margin-right: 2px;
+}
+.inn-distance{
+    font-size: 16px;
+    color: #D53636;
+}

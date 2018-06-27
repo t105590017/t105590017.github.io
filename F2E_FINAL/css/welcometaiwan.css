@@ -1,0 +1,25 @@
+.content {
+    width: 100%;
+    height: auto;
+    color: #e87563;
+    text-align: center;
+    }
+    .viewMain {
+        width: 980px;
+        margin: 0 auto;
+    }
+    .viewMain h1 {
+        margin: 0;
+        font-size: 30px;
+        padding-right: 550px;
+        padding-top: 50px;
+    }
+    .viewMain p {
+        width: 700px;
+        padding-top: 10px;
+        padding-left: 80px;
+        color: black;
+        margin: 0 auto;
+        text-align: left;
+        padding-bottom: 30px;
+    }

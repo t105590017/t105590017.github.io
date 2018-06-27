@@ -1,0 +1,58 @@
+article{
+    background-color: #39537D;
+}
+.content{
+    margin: 0 auto;
+    padding: 0;
+    width: 980px;
+}
+h1 {
+    font-size: 210%;
+    padding-left: 100px;
+    padding-top: 30px;
+    margin: 0;
+    color: #fff;
+}
+h2 {
+    font-size: 120%;
+    padding-left: 130px;
+    padding-top: 50px;
+    margin: 0;
+    color: #F7DC6F;
+}
+.item {
+    text-align: center;
+}
+.title {
+    text-align: center;
+    font-size: 160%;
+    padding-top: 30px;
+    margin: 0;
+    color: #F7F9F9  ;
+}
+.video {
+    text-align: center;
+    margin-top: 20px;
+}
+p {
+    text-align: center;
+    font-size: 110%;
+    padding: 20px 120px 20px 120px;
+    color:#D5D8DC  ;
+}
+h4 {
+    font-size: 120%;
+    
+    margin: 0;
+    color: #fff;
+}
+.videoCopyright {
+    box-sizing: border-box;
+    line-height: 30px;
+    clear: both;
+    width: 100%;
+    margin: 15px auto;
+    padding: 10px;
+    border: 1px #536482 solid;
+    color: #fff;
+}
