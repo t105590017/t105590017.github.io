@@ -46,13 +46,13 @@ article{
     }
     .title {
         padding-top: 15px;
-        margin-left:5%;
+        margin-left:15%;
         width: 700px;
     }
     .item {
         margin: 0px auto;
         padding-bottom: 30px;
-        width: 85%;
+        width: 65%;
         text-align: left;
     }
     .item a>div {
