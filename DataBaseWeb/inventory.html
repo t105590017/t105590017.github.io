@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class=""><!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Inventory</title>
+
+		<!-- Standard Favicon -->
+		<link rel="icon" type="image/x-icon" href="assets/ico/favicon.ico" />
+		
+		<!-- For iPhone 4 Retina display: -->
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images//apple-touch-icon-114x114-precomposed.png">
+		
+		<!-- For iPad: -->
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images//apple-touch-icon-72x72-precomposed.png">
+		
+		<!-- For iPhone: -->
+		<link rel="apple-touch-icon-precomposed" href="images//apple-touch-icon-57x57-precomposed.png">	
+		
+		<!-- Library - Google Font Familys -->	
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto+Slab:100,300,400,700" rel="stylesheet">
+		
+		<!-- Library - Bootstrap v3.3.5 -->
+		<link rel="stylesheet" type="text/css" href="assets/libraries/lib.css">
+
+		<!-- Custom - Theme CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style-inventory.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/plugins.css">	
+		<link rel="stylesheet" type="text/css" href="assets/css/navigation-menu.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/shortcode.css">
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/fontawesome-5.6.0/css/all.min.css">
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="assets/flexslider/flexslider.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/media-queries.css">
+		
+		<!--[if lt IE 9]>
+			<script src="js/html5/respond.min.js"></script>
+		<![endif]-->	
+	</head>
+
+	<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+		<div class="main-container">	
+
+			<!-- Top menu -->
+			<nav class="navbar" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">Andia - a super cool design agency...</a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="top-navbar-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="active">
+								<a href="index.html"><i class="fa fa-home"></i><br>Home</a>
+							</li>
+							<li>
+								<a href="about.html"><i class="fas fa-comments"></i><br>About</a>
+							</li>
+							<li>
+								<a href="inventory.html"><i class="fa fa-th-large"></i><br>Inventory</a>
+							</li>
+							<li>
+								<a href="services.html"><i class="fa fa-tasks"></i><br>Services</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
+									<i class="fa fa-users"></i><br>User <span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="">Buyer</a></li>
+									<li><a href="seller/Database-Person.html">Seller</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+			<!-- Page Title -->
+			<div class="page-title-container">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 wow fadeIn">
+							<i class="fa fa-th-large"></i>
+							<h1>Inventory/</h1>
+							<p>A variety of configuration options are available for immediate delivery from our fleet of display and test drive vehicles. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Main -->
+			<main>			
+				<div class="Inventory-section"> 
+					<div class="container">
+						<form>					
+							<div class="select-vechical-type">
+								<h3>select vehicle type</h3>
+								<p style="margin-top:10px">
+									<input name="suv" type="checkbox" id="suv-car" />
+									<label for="suv-car"><img src="assets/img/search/search-ic-1.png" alt="wel-ic">suv</label>
+								</p>
+								<p>
+									<input name="pickup" type="checkbox" id="pickup-car" />
+									<label for="pickup-car"><img src="assets/img/search/search-ic-2.png" alt="wel-ic">pickup</label>
+								</p>
+								<p>
+									<input name="convertible" type="checkbox" id="convertible-car" />
+									<label for="convertible-car"><img src="assets/img/search/search-ic-3.png" alt="wel-ic">convertible</label>
+								</p>
+								<p>
+									<input name="sedan" type="checkbox" id="sedan-car" />
+									<label for="sedan-car"><img src="assets/img/search/search-ic-4.png" alt="wel-ic">sedan</label>
+								</p>
+								<p>
+									<input name="coupe" type="checkbox" id="coupe-car" />
+									<label for="coupe-car"><img src="assets/img/search/search-ic-5.png" alt="wel-ic">coupe</label>
+								</p>
+								
+								<!-- <div><img src="assets/img/search/search-ic-1.png" alt="wel-ic">suv</div>
+								<div><img src="assets/img/search/search-ic-2.png" alt="wel-ic">pickup</div>
+								<div><img src="assets/img/search/search-ic-3.png" alt="wel-ic">convertible</div>
+								<div><img src="assets/img/search/search-ic-4.png" alt="wel-ic">sedan</div>
+								<div><img src="assets/img/search/search-ic-5.png" alt="wel-ic">coupe</div> -->
+							</div>
+							<div class="select-vechical-type">
+								<h3>ARE YOU LOOKING FOR</h3>
+								<div class="seclect-option">
+									<div class="select">
+										<select name="CarBrand">
+											<option>no</option>
+											<option>brand1</option>
+											<option>brand2</option>
+											<option>brand3</option>
+											<option>brand4</option>
+										</select>
+									</div>
+									<div class="select">
+										<select name="CarModel">
+											<option>no</option>
+											<option>model1</option>
+											<option>model2</option>
+											<option>model3</option>
+											<option>model4</option>
+										</select>
+									</div>
+								</div>
+								<div class="price-filter">
+									<a class="filter" title="filter">PRICE FILTER</a>
+									<div class="price-input">
+										<input name="amountIN" id="amount" value="$200" readonly="readonly"></input>
+										<input name="amount2IN" id="amount2" value="$130000" readonly="readonly"></input>
+									</div>
+									<div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+										<div class="ui-slider-range ui-widget-header ui-corner-all"></div>
+										<span tabindex="0" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 0.153078%;"></span>
+										<span tabindex="0" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 100%;"></span>
+									<div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0.153078%; width: 99.8469%;"></div></div>
+								</div>
+							</div>
+							<button><i class="icon icon-Search"></i></button>
+						</form>
+						<div class="padding-100"></div>
+					</div>
+				</div>
+				
+				<!-- Inventory Section -->
+				<div class="inventroy-section container-fluid no-padding">
+					<!-- Container -->
+					<div class="container">
+						<div class="row">
+							<div style="margin: 0 4.5%" class="col-md-11 col-sm-11 content-area">
+								<!-- Row -->
+								<div class="row">
+									<div id = "carItem0_box" class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+										<img id = "carItem0_Img" alt="Inventory" />
+										<span id="carItem0_Tag" class="product-new-top"></span>
+										<div class="inventroy-content">
+											<h3 id = "carItem0_Name">UnknowCarName</h3>
+											<div class="inv-boxs">
+												<span id = "carItem0_Year">????</span>
+												<span id = "carItem0_HP">???hp</span>
+												<span id = "carItem0_TransmissionLite">autototototo</span>
+												<span id = "carItem0_TopSpeed">???mph</span>
+											</div>
+											<h4>START FROM <b id = "carItem0_Price">$??,???</b></h4>
+											<a id = "carItem0_Link" href="404.html" title="Book now">book now</a>
+										</div>
+									</div>
+									<div id = "carItem1_box" class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+										<img id = "carItem1_Img" alt="Inventory" />
+										<span id="carItem1_Tag" class="product-new-top"></span>
+										<div class="inventroy-content">
+											<h3 id = "carItem1_Name">UnknowCarName</h3>
+											<div class="inv-boxs">
+												<span id = "carItem1_Year">????</span>
+												<span id = "carItem1_HP">???hp</span>
+												<span id = "carItem1_TransmissionLite">autototototo</span>
+												<span id = "carItem1_TopSpeed">???mph</span>
+											</div>
+											<h4>START FROM <b id = "carItem1_Price">$??,???</b></h4>
+											<a id = "carItem1_Link" href="404.html" title="Book now">book now</a>
+										</div>
+									</div>
+									<div id = "carItem2_box" class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+										<img id = "carItem2_Img" alt="Inventory" />
+										<span id="carItem2_Tag" class="product-new-top"></span>
+										<div class="inventroy-content">
+											<h3 id = "carItem2_Name">UnknowCarName</h3>
+											<div class="inv-boxs">
+												<span id = "carItem2_Year">????</span>
+												<span id = "carItem2_HP">???hp</span>
+												<span id = "carItem2_TransmissionLite">autototototo</span>
+												<span id = "carItem2_TopSpeed">???mph</span>
+											</div>
+											<h4>START FROM <b id = "carItem2_Price">$??,???</b></h4>
+											<a id = "carItem2_Link" href="404.html" title="Book now">book now</a>
+										</div>
+									</div>
+									<div id = "carItem3_box" class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+										<img id = "carItem3_Img" alt="Inventory" />
+										<span id="carItem3_Tag" class="product-new-top"></span>
+										<div class="inventroy-content">
+											<h3 id = "carItem3_Name">UnknowCarName</h3>
+											<div class="inv-boxs">
+												<span id = "carItem3_Year">????</span>
+												<span id = "carItem3_HP">???hp</span>
+												<span id = "carItem3_TransmissionLite">autototototo</span>
+												<span id = "carItem3_TopSpeed">???mph</span>
+											</div>
+											<h4>START FROM <b id = "carItem3_Price">$??,???</b></h4>
+											<a id = "carItem3_Link" href="404.html" title="Book now">book now</a>
+										</div>
+									</div>
+									<div id = "carItem4_box" class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+										<img id = "carItem4_Img" alt="Inventory" />
+										<span id="carItem4_Tag" class="product-new-top"></span>
+										<div class="inventroy-content">
+											<h3 id = "carItem4_Name">UnknowCarName</h3>
+											<div class="inv-boxs">
+												<span id = "carItem4_Year">????</span>
+												<span id = "carItem4_HP">???hp</span>
+												<span id = "carItem4_TransmissionLite">autototototo</span>
+												<span id = "carItem4_TopSpeed">???mph</span>
+											</div>
+											<h4>START FROM <b id = "carItem4_Price">$??,???</b></h4>
+											<a id = "carItem4_Link" href="404.html" title="Book now">book now</a>
+										</div>
+									</div>
+									<div id = "carItem5_box" class="col-md-4 col-sm-6 col-xs-12 inventroy-box">
+										<img id = "carItem5_Img" alt="Inventory" />
+										<span id="carItem5_Tag" class="product-new-top"></span>
+										<div class="inventroy-content">
+											<h3 id = "carItem5_Name">UnknowCarName</h3>
+											<div class="inv-boxs">
+												<span id = "carItem5_Year">????</span>
+												<span id = "carItem5_HP">???hp</span>
+												<span id = "carItem5_TransmissionLite">autototototo</span>
+												<span id = "carItem5_TopSpeed">???mph</span>
+											</div>
+											<h4>START FROM <b id = "carItem5_Price">$??,???</b></h4>
+											<a id = "carItem5_Link" href="404.html" title="Book now">book now</a>
+										</div>
+									</div>
+								</div><!-- Row /- -->
+								<div class="padding-40"></div>
+								<nav class="ow-pagination">
+									<ul id = "carItem-page" class="pagination">
+									</ul>
+								</nav>
+								<div class="padding-50"></div>
+							</div>
+						</div>
+					</div><!-- Container /- -->
+				</div><!-- Main Section /- -->		
+				
+				<div class="padding-100"></div>
+			</main>
+		
+			<!-- Footer -->
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4 footer-box wow fadeInUp">
+							<h4>About Us</h4>
+							<div class="footer-box-text">
+								<p>
+									Being an automotive company is more than designing cars, trucks and SUVs. 
+									For us, quality, safety and innovation are as important, as well as integral parts, like every vehicle that leaves our plants...
+								</p>
+								<p><a href="about.html">Read more...</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 footer-box wow fadeInDown">
+							<h4>Email Updates</h4>
+							<div class="footer-box-text footer-box-text-subscribe">
+								<p>Enter your email and you'll be one of the first to get new updates:</p>
+								<form role="form" action="assets/subscribe.php" method="post">
+									<div class="form-group">
+										<label class="sr-only" for="subscribe-email">Email address</label>
+										<input type="text" name="email" placeholder="Email..." class="subscribe-email" id="subscribe-email">
+									</div>
+									<button type="submit" class="btn">Subscribe</button>
+								</form>
+								<p class="success-message"></p>
+								<p class="error-message"></p>
+							</div>
+						</div>
+						<div class="col-sm-4 footer-box wow fadeInDown">
+							<h4>Contact Us</h4>
+							<div class="footer-box-text footer-box-text-contact">
+								<p><i class="fa fa-map-marker"></i> Address: Via Principe Amedeo 9, 10100, Torino, TO, Italy</p>
+								<p><i class="fa fa-phone"></i> Phone: 0039 333 12 68 347</p>
+								<p><i class="fas fa-comments"></i></i> Skype: Andia_Agency</p>
+								<p><i class="fa fa-envelope"></i> Email: <a href="">contact@andia.co.uk</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 wow fadeIn">
+							<div class="footer-border"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-7 footer-copyright wow fadeIn">
+							<p>Copyright 2012 Andia - All rights reserved. Template by <a href="http://azmind.com/free-bootstrap-themes-templates/">Azmind</a>.</p>
+						</div>
+						<div class="col-sm-5 footer-social wow fadeIn">
+							<a><i class="fa fa-facebook"></i></a>
+							<a><i class="fa fa-dribbble"></i></a>
+							<a><i class="fa fa-twitter"></i></a>
+							<a><i class="fa fa-pinterest"></i></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			
+		</div>
+		
+		<!-- JQuery v1.12.4 -->
+		<script src="assets/js/jquery-1.11.1.min.js"></script>
+
+		<!-- Library - Js -->
+		<script src="assets/libraries/lib.js"></script>
+		<script src="assets/libraries/lightslider/lightslider.min.js"></script>
+		
+		<!-- RS5.0 Core JS Files -->
+		<script type="text/javascript" src="assets/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+		<script type="text/javascript" src="assets/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+		<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+		<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+		<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+		<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+		
+		<!-- Data -  Connect JS -->
+		<script src="assets/js/inventory-page.js"></script>
+
+		<!-- RefreshItemData -->
+		<script>RefreshItemData();</script>
+		<script>SetPagination();</script>
+		
+		<!-- Library - Theme JS -->
+		<script src="assets/js/functions.js"></script>
+
+	</body>
+</html>

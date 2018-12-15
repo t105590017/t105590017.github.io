@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Database-Person</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- VENDOR CSS -->
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/fontawesome-5.6.0/css/all.min.css">
+	<link rel="stylesheet" href="assets/vendor/linearicons/style.css">
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+	<link rel="stylesheet" href="assets/css/demo.css">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<!-- ICONS -->
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../assets/ico/favicon.ico">
+
+	<link rel="stylesheet" href="assets/css/customer.css">
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="brand">
+				<a href="../index.html"><img src="../assets/img/logo.png" alt="Klorofil Logo" class="img-responsive logo"></a>
+			</div>
+			<div class="container-fluid">
+				<div class="navbar-btn">
+					<button type="button" class="btn-toggle-fullwidth"><i class="lnr lnr-arrow-left-circle"></i></button>
+				</div>
+				<div id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+								<i class="lnr lnr-alarm"></i>
+								<span class="badge bg-danger">5</span>
+							</a>
+							<ul class="dropdown-menu notifications">
+								<li><a href="#" class="notification-item"><span class="dot bg-warning"></span>System space is almost full</a></li>
+								<li><a href="#" class="notification-item"><span class="dot bg-danger"></span>You have 9 unfinished tasks</a></li>
+								<li><a href="#" class="notification-item"><span class="dot bg-success"></span>Monthly report is available</a></li>
+								<li><a href="#" class="notification-item"><span class="dot bg-warning"></span>Weekly meeting in 1 hour</a></li>
+								<li><a href="#" class="notification-item"><span class="dot bg-success"></span>Your request has been approved</a></li>
+								<li><a href="#" class="more">See all notifications</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="lnr lnr-question-circle"></i> <span>Help</span>
+								<i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Basic Use</a></li>
+								<li><a href="#">Working With Data</a></li>
+								<li><a href="#">Security</a></li>
+								<li><a href="#">Troubleshooting</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/img/user.png" class="img-circle" alt="Avatar">
+								<span>Samuel</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
+								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
+								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
+								<li><a href="#"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END NAVBAR -->
+
+		<!-- LEFT SIDEBAR -->
+		<div id="sidebar-nav" class="sidebar">
+			<div class="sidebar-scroll">
+				<nav>
+					<ul class="nav">
+						<li><a href=""><i class="fas fa-home"></i><span>Home</span></a></li>
+						<li><a href=""><i class="fas fa-cogs"></i><span>Account</span></a></li>
+						<li><a href=""><i class="fas fa-th-large"></i><span>Inventory</span></a></li>
+						<li><a href=""><i class="lnr lnr-file-empty"></i> <span>Pages</span></a></li>
+						<li>
+							<a href="#subPages" data-toggle="collapse" class="collapsed active">
+								<i class="fas fa-database"></i><span>Database</span>
+								<i class="icon-submenu lnr lnr-chevron-left"></i>
+							</a>
+							<div id="subPages" class="collapse in">
+								<ul class="nav">
+									<li><a href="Database-Person.html" class="">Person</a></li>
+									<li><a href="Database-Car.html" class="active">Car</a></li>
+									<li><a href="" class="">Feedback</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- END LEFT SIDEBAR -->
+
+		<!-- MAIN -->
+		<div class="main">
+			<!-- MAIN CONTENT -->
+			<div class="main-content">
+				<div class="container-fluid">
+					<h3 class="page-title">Cars</h3>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel">
+								<div class="panel-heading">
+									<h3 class="panel-title">Manager</h3>
+									<div class="right">
+										<button type="button" class="btn btn-info" data-toggle="modal" data-target="#addModal"><i class="fa fa-plus-circle"></i>
+											Add</button>
+										<input id="ManagerSearch" type="search" class="form-control form-control-sm" placeholder="Search" onkeyup="TableChange('Manager')"
+										 onkeydown="TableChange('Manager')">
+										<button type="button" class="btn-toggle-collapse">
+											<i class="lnr lnr-chevron-up"></i>
+										</button>
+									</div>
+								</div>
+								<div class="panel-body">
+									<table class="table table-hover">
+										<thead>
+											<tr id="Manager_Table_Head">
+												<th>Id</th>
+												<th>Photo</th>
+												<th>Name</th>
+												<th>Year<th>
+												<th>Make</th>
+												<th>Model</th>
+												<th>Price</th>
+												<th>Engine</th>
+												<th>Transmission</th>
+												<th>Top Speed</th>
+											</tr>
+										</thead>
+										<tbody id="Manager_Table_Data">
+											<!-- database_page.js Manager -->
+										</tbody>
+									</table>
+								</div>
+								<!-- addModal -->
+								<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="panel">
+												<div class="panel-heading">
+													<h3 class="panel-title">Add Manager</h3>
+												</div>
+												<div class="panel-body">
+													<label for="addId">ID：</label>
+													<input id="addId" type="text" class="form-control">
+													<br>
+													<label for="addName">Name：</label>
+													<input id="addName" type="text" class="form-control">
+													<br>
+													<label for="addAccount">Account：</label>
+													<input id="addAccount" type="text" class="form-control">
+													<br>
+													<label for="addPassword">Password：</label>
+													<input id="addPassword" type="password" class="form-control">
+													<br>
+													<label for="addPhone">Phone：</label>
+													<input id="addPhone" type="text" class="form-control">
+													<br>
+													<label for="addEmail">Email：</label>
+													<input id="addEmail" type="text" class="form-control">
+													<br>
+													<label for="addBirthday">Birthday：</label>
+													<input id="addBirthday" type="text" class="form-control">
+													<br>
+													<label for="addClass">Class：</label>
+													<select id="addClass" class="form-control">
+														<option value="0">0</option>
+														<option value="1">1</option>
+													</select>
+													<br>
+													<label>Sex：</label>
+													<label class="fancy-radio">
+														<input name="gender" value="1" type="radio">
+														<span><i></i>Male</span>
+													</label>
+													<label class="fancy-radio">
+														<input name="gender" value="0" type="radio">
+														<span><i></i>Female</span>
+													</label>
+												</div>
+											</div>
+
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary" onclick="AddManagerData();">Add Manager</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- modifyModal -->
+								<div class="modal fade" id="modifyModal" tabindex="-1" role="dialog" aria-labelledby="modifyModalLabel"
+								 aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title" id="modifyModalLabel">Modify Manager</h1>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												...
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary" onclick="AddManagerData();">Save changes</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- deleteModal -->
+								<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
+								 aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h1 class="modal-title" id="deleteModalLabel">Modify Manager</h1>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												...
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary" onclick="AddManagerData();">Save changes</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END MAIN CONTENT -->
+		</div>
+		<!-- END MAIN -->
+		<div class="clearfix"></div>
+	</div>
+	<!-- END WRAPPER -->
+	<!-- Javascript -->
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="assets/scripts/klorofil-common.js"></script>
+
+	<!-- database_page JS -->
+	<script src="assets/js/database_page.js"></script>
+</body>
+
+</html>

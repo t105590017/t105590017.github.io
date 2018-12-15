@@ -1,0 +1,101 @@
+[
+    {
+        "id": "10559001",
+        "Name": "Manager_1",
+        "Account": "Manager_Account_1",
+        "Password": "M_a_n_ager1_1_1_1_1_1",
+        "Sex": "men",
+        "Phone": "0987654321",
+        "Email": "email1@gmail.com",
+        "Birthday": "10/01/01",
+        "Class": "1"
+    },
+    {
+        "id": "10559002",
+        "Name": "Manager_2",
+        "Account": "Manager_Account_2",
+        "Password": "M_a_n_ager2_2_2_2_2_2",
+        "Sex": "women",
+        "Phone": "0987654322",
+        "Email": "email2@gmail.com",
+        "Birthday": "20/02/02",
+        "Class": "0"
+    },
+    {
+        "id": "10559003",
+        "Name": "Manager_3",
+        "Account": "Manager_Account_3",
+        "Password": "M_a_n_ager3_3_3_3_3_3",
+        "Sex": "men",
+        "Phone": "0987654323",
+        "Email": "email3@gmail.com",
+        "Birthday": "30/03/03",
+        "Class": "1"
+    },
+    {
+        "id": "10559004",
+        "Name": "Manager_4",
+        "Account": "Manager_Account_4",
+        "Password": "M_a_n_ager4_4_4_4_4_4",
+        "Sex": "women",
+        "Phone": "0987654324",
+        "Email": "email4@gmail.com",
+        "Birthday": "40/04/04",
+        "Class": "0"
+    },
+    {
+        "id": "10559005",
+        "Name": "Manager_5",
+        "Account": "Manager_Account_5",
+        "Password": "M_a_n_ager5_5_5_5_5_5",
+        "Sex": "men",
+        "Phone": "0987654325",
+        "Email": "email5@gmail.com",
+        "Birthday": "50/05/05",
+        "Class": "1"
+    },
+    {
+        "id": "10559006",
+        "Name": "Manager_6",
+        "Account": "Manager_Account_6",
+        "Password": "M_a_n_ager6_6_6_6_6_6",
+        "Sex": "women",
+        "Phone": "0987654326",
+        "Email": "email6@gmail.com",
+        "Birthday": "60/06/06",
+        "Class": "0"
+    },
+    {
+        "id": "10559007",
+        "Name": "Manager_7",
+        "Account": "Manager_Account_7",
+        "Password": "M_a_n_ager7_7_7_7_7_7",
+        "Sex": "men",
+        "Phone": "0987654327",
+        "Email": "email7@gmail.com",
+        "Birthday": "70/07/07",
+        "Class": "1"
+    },
+    {
+        "id": "10559008",
+        "Name": "Manager_8",
+        "Account": "Manager_Account_8",
+        "Password": "M_a_n_ager8_8_8_8_8_8",
+        "Sex": "women",
+        "Phone": "0987654328",
+        "Email": "email8@gmail.com",
+        "Birthday": "80/08/08",
+        "Class": "0"
+    },
+    {
+        "id": "10559009",
+        "Name": "Manager_9",
+        "Account": "Manager_Account_9",
+        "Password": "M_a_n_ager9_9_9_9_9_9",
+        "Sex": "men",
+        "Phone": "0987654329",
+        "Email": "email9@gmail.com",
+        "Birthday": "90/09/09",
+        "Class": "1"
+    }
+]

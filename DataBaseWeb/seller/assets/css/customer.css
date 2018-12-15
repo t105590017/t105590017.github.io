@@ -1,0 +1,11 @@
+.right > .form-control{
+    display: inline-block;
+    width: auto;
+    margin-top: -10px;
+}
+
+#deleteMessage span {
+    font-size: 25px;
+    font-weight: 500;
+    color: red;
+}

@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Inventory Single</title>
+
+	<!-- Standard Favicon -->
+	<link rel="icon" type="image/x-icon" href="assets/ico/favicon.ico" />
+
+	<!-- For iPhone 4 Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images//apple-touch-icon-114x114-precomposed.png">
+
+	<!-- For iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images//apple-touch-icon-72x72-precomposed.png">
+
+	<!-- For iPhone: -->
+	<link rel="apple-touch-icon-precomposed" href="images//apple-touch-icon-57x57-precomposed.png">
+
+	<!-- Library - Google Font Familys -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto+Slab:100,300,400,700"
+	 rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="assets/libraries/lightslider/lightslider.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="assets/revolution/css/settings.css">
+
+	<!-- RS5.0 Layers and Navigation Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="assets/revolution/css/navigation.css">
+
+	<!-- Library - Bootstrap v3.3.5 -->
+	<link rel="stylesheet" type="text/css" href="assets/libraries/lib.css">
+
+	<!-- Custom - Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/navigation-menu.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/shortcode.css">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/fontawesome-5.6.0/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/flexslider/flexslider.css">
+	<link rel="stylesheet" href="assets/css/form-elements.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/media-queries.css">
+
+	<!--[if lt IE 9]>
+			<script src="js/html5/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+	<div class="main-container">
+
+
+		<!-- Top menu -->
+		<nav class="navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Andia - a super cool design agency...</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="top-navbar-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active">
+							<a href="index.html"><i class="fa fa-home"></i><br>Home</a>
+						</li>
+						<li>
+							<a href="about.html"><i class="fas fa-comments"></i><br>About</a>
+						</li>
+						<li>
+							<a href="inventory.html"><i class="fa fa-th-large"></i><br>Inventory</a>
+						</li>
+						<li>
+							<a href="services.html"><i class="fa fa-tasks"></i><br>Services</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">
+								<i class="fa fa-users"></i><br>User <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="">Buyer</a></li>
+								<li><a href="seller/Database-Person.html">Seller</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<!-- Page Title -->
+			<div class="page-title-container">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 wow fadeIn">
+							<i class="fa fa-th-large"></i>
+							<h1>Car Inventory/</h1>
+							<p>Here you can see the details of the car</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section-padding"></div>
+
+			<!-- Container -->
+			<div class="container">
+				<!-- Row -->
+				<div class="row">
+					<div class="col-md-8 col-sm-8 col-xs-12 content-area">
+						<div class="inventory-slider">
+							<ul id="imageGallery" class="gallery">
+								<!-- Add car img to imageGallery -->
+							</ul>
+						</div>
+						<div class="inventroy-content inventory-single">
+							<h3 id="carName">????? ????? ???</h3>
+							<div class="inv-box">
+								<span id="carYear">????</span>
+								<span id="carHP">???HP</span>
+								<span id="carTransmissionLite">autotototo</span>
+								<span id="carTopSpeed">???mph</span>
+							</div>
+							<h4>START FROM <b id="carPrice">$???,???</b>
+								<a href="#" title="VIEW DETAILS">VIEW DETAILS <i class="fa fa-angle-double-right"></i></a>
+							</h4>
+						</div>
+						<div class="inventory-tabs">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#specifications" role="tab" data-toggle="tab">specifications</a></li>
+								<li role="presentation"><a href="#overview" role="tab" data-toggle="tab">overview</a></li>
+								<li role="presentation"><a href="#locations" role="tab" data-toggle="tab">locations</a></li>
+							</ul>
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="specifications">
+									<p>It is a beautiful day in this neighborhood a beautiful day for a neighbor would you be mine so get a
+										witch's shawl on a broomstick you can crawl on were gonna pay a call on the Addams Family no one you see is
+										smarter than he making your way in the world today takes everything you have got taking a break from all your
+										worries sure would help a lot this neighborhood a beautiful day for a neighbor would you be mine so get a
+										witch's shawl on a broomstick you can crawl on were gonna pay a call.</p>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="overview">
+									<p>Addams Family no one you see is smarter than he making your way in the world today takes everything you
+										have got taking a break from all your worries sure would help a lot this neighborhood a beautiful day It is a
+										beautiful day in this neighborhood a beautiful day for a neighbor would you be mine so get a witch's shawl on
+										a broomstick you can crawl on were gonna pay a call on the for a neighbor would you be mine so get a witch's
+										shawl on a broomstick you can crawl on were gonna pay a call.</p>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="locations">
+									<p>Beautiful day for a neighbor would you be mine so get a witch's shawl on a broomstick you can crawl on were
+										gonna pay a call It is a beautiful day in this neighborhood a beautiful day for a neighbor would you be mine
+										so get a witch's shawl on a broomstick you can crawl on were gonna pay a call on the Addams Family no one you
+										see is smarter than he making your way in the world today takes everything you have got taking a break from
+										all your worries sure would help a lot this neighborhood a.</p>
+								</div>
+							</div>
+							<div class="padding-50"></div>
+						</div>
+
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 widget-area">
+						<aside class="widget widget_specifiaction">
+							<h3 class="widget-title">Specifications</h3>
+							<div class="specifications-content">
+								<p id="carSpecificationsYear"><span>Year:</span>????</p>
+								<p id="carSpecificationsMake"><span>Make:</span>????</p>
+								<p id="carSpecificationsModel"><span>Model:</span>????</p>
+								<p id="carSpecificationsPrice"><span>Price:</span>????</p>
+								<p id="carSpecificationsEngin"><span>Engine:</span>????</p>
+								<p id="carSpecificationsTransmission"><span>Transmission:</span>????</p>
+								<p id="carSpecificationsHorsepower"><span>Horsepower @ RPM:</span>????</p>
+								<p id="carSpecificationsTorque"><span>Torque @ RPM:</span>????</p>
+								<p id="carSpecificationsDisplacement"><span>Displacement:</span>????</p>
+								<p id="carSpecifications0-60Time"><span>0-60 time:</span>????</p>
+								<p id="carSpecificationsTopSpeed"><span>Top Speed:</span>????</p>
+							</div>
+						</aside>
+						<aside class="widget widget_loan">
+							<h3 class="widget-title">Loan Estimator</h3>
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Loan Amount" />
+								</div>
+								<div class="form-group">
+									<p>Loan Term in Month</p>
+									<div class="check-box">
+										<input type="checkbox" id="12" />
+										<label for="12">12</label>
+									</div>
+									<div class="check-box">
+										<input type="checkbox" id="24" />
+										<label for="24">24</label>
+									</div>
+									<div class="check-box">
+										<input type="checkbox" id="36" />
+										<label for="36">36</label>
+									</div>
+									<div class="check-box">
+										<input type="checkbox" id="48" />
+										<label for="48">48</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Down Payment" />
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Rate of Interest" />
+								</div>
+								<button>Get Result</button>
+							</form>
+						</aside>
+						<div class="padding-50"></div>
+					</div>
+				</div><!-- Row /- -->
+				<div class="padding-100"></div>
+			</div><!-- Container /- -->
+
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 footer-box wow fadeInUp">
+						<h4>About Us</h4>
+						<div class="footer-box-text">
+							<p>
+								Being an automotive company is more than designing cars, trucks and SUVs.
+								For us, quality, safety and innovation are as important, as well as integral parts, like every vehicle that
+								leaves our plants...
+							</p>
+							<p><a href="about.html">Read more...</a></p>
+						</div>
+					</div>
+					<div class="col-sm-4 footer-box wow fadeInDown">
+						<h4>Email Updates</h4>
+						<div class="footer-box-text footer-box-text-subscribe">
+							<p>Enter your email and you'll be one of the first to get new updates:</p>
+							<form role="form" action="assets/subscribe.php" method="post">
+								<div class="form-group">
+									<label class="sr-only" for="subscribe-email">Email address</label>
+									<input type="text" name="email" placeholder="Email..." class="subscribe-email" id="subscribe-email">
+								</div>
+								<button type="submit" class="btn">Subscribe</button>
+							</form>
+							<p class="success-message"></p>
+							<p class="error-message"></p>
+						</div>
+					</div>
+					<div class="col-sm-4 footer-box wow fadeInDown">
+						<h4>Contact Us</h4>
+						<div class="footer-box-text footer-box-text-contact">
+							<p><i class="fa fa-map-marker"></i> Address: Via Principe Amedeo 9, 10100, Torino, TO, Italy</p>
+							<p><i class="fa fa-phone"></i> Phone: 0039 333 12 68 347</p>
+							<p><i class="fas fa-comments"></i></i> Skype: Andia_Agency</p>
+							<p><i class="fa fa-envelope"></i> Email: <a href="">contact@andia.co.uk</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 wow fadeIn">
+						<div class="footer-border"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-7 footer-copyright wow fadeIn">
+						<p>Copyright 2012 Andia - All rights reserved. Template by <a href="http://azmind.com/free-bootstrap-themes-templates/">Azmind</a>.</p>
+					</div>
+					<div class="col-sm-5 footer-social wow fadeIn">
+						<a><i class="fa fa-facebook"></i></a>
+						<a><i class="fa fa-dribbble"></i></a>
+						<a><i class="fa fa-twitter"></i></a>
+						<a><i class="fa fa-pinterest"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- JQuery v1.12.4 -->
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+
+	<!-- Inventory-single Data JS -->
+	<script src="assets/js/inventory-single.js"></script>
+
+	<!-- Library - Js -->
+	<script src="assets/libraries/lib.js"></script>
+	<script src="assets/libraries/lightslider/lightslider.min.js"></script>
+
+	<!-- RS5.0 Core JS Files -->
+	<script type="text/javascript" src="assets/revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+	<script type="text/javascript" src="assets/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+	<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+
+	<!-- Library - Google Map API -->
+	<!---<script src="http://ditu.google.cn/maps/api/js?key=AIzaSyCf0dPCQ0C7oVF0WFKhuyz7v7oWei3vFPI "></script>--->
+
+	<!-- Library - Theme JS -->
+	<script src="assets/js/functions.js"></script>
+</body>
+
+</html>

@@ -31,7 +31,7 @@ strong { font-weight: bold; }
 img { max-width: 100%; }
 
 h1, h2 { line-height: 40px; }
-h3, h4 { line-height: 20px; }
+h3, h4 { line-height: 40px; }
 
 ::-moz-selection { background: #243B4A; color: #fff; text-shadow: none; }
 ::selection { background: #243B4A; color: #fff; text-shadow: none; }
@@ -1022,4 +1022,21 @@ footer {
 .pricing-2-container {
     margin-top: 30px;
     padding-bottom: 40px;
+}
+
+.section-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.product-new-top {
+    background: #fc636b;
+    color: #fff;
+    display: inline-block;
+    right: 0;
+    padding: 0 10px 1px;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    font-size: 25px;
 }
