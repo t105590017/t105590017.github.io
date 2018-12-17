@@ -26,7 +26,7 @@
 
 <body>
 	<!-- WRAPPER -->
-	<div id="wrapper">
+	<div id="wrapper" class="Car_Database">
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="brand">
@@ -69,7 +69,7 @@
 								<li><a href="#"><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
 								<li><a href="#"><i class="lnr lnr-envelope"></i> <span>Message</span></a></li>
 								<li><a href="#"><i class="lnr lnr-cog"></i> <span>Settings</span></a></li>
-								<li><a href="#"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+								<li><a id="logout" href="#"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
 							</ul>
 						</li>
 					</ul>
@@ -116,12 +116,12 @@
 						<div class="col-md-12">
 							<div class="panel">
 								<div class="panel-heading">
-									<h3 class="panel-title">Manager</h3>
+									<h3 class="panel-title">Car</h3>
 									<div class="right">
 										<button type="button" class="btn btn-info" data-toggle="modal" data-target="#addModal"><i class="fa fa-plus-circle"></i>
 											Add</button>
-										<input id="ManagerSearch" type="search" class="form-control form-control-sm" placeholder="Search" onkeyup="TableChange('Manager')"
-										 onkeydown="TableChange('Manager')">
+										<input id="CarSearch" type="search" class="form-control form-control-sm" placeholder="Search" onkeyup="TableChange('Car')"
+										 onkeydown="TableChange('Car')">
 										<button type="button" class="btn-toggle-collapse">
 											<i class="lnr lnr-chevron-up"></i>
 										</button>
@@ -144,7 +144,7 @@
 											</tr>
 										</thead>
 										<tbody id="Car_Table_Data">
-											<!-- database_page.js Manager -->
+											<!-- database_page.js Car -->
 										</tbody>
 									</table>
 								</div>
@@ -154,7 +154,7 @@
 										<div class="modal-content">
 											<div class="panel">
 												<div class="panel-heading">
-													<h3 class="panel-title">Add Manager</h3>
+													<h3 class="panel-title">Add Car</h3>
 												</div>
 												<div class="panel-body">
 													<label for="addId">ID：</label>
@@ -198,7 +198,7 @@
 
 											<div class="modal-footer">
 												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-												<button type="button" class="btn btn-primary" onclick="AddManagerData();">Add Manager</button>
+												<button type="button" class="btn btn-primary" onclick="AddCarData();">Add Car</button>
 											</div>
 										</div>
 									</div>
@@ -209,7 +209,7 @@
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h1 class="modal-title" id="modifyModalLabel">Modify Manager</h1>
+												<h1 class="modal-title" id="modifyModalLabel">Modify Car</h1>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">&times;</span>
 												</button>
@@ -219,7 +219,7 @@
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-												<button type="button" class="btn btn-primary" onclick="AddManagerData();">Save changes</button>
+												<button type="button" class="btn btn-primary" onclick="AddCarData();">Save changes</button>
 											</div>
 										</div>
 									</div>
@@ -230,7 +230,7 @@
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="modal-header">
-												<h1 class="modal-title" id="deleteModalLabel">Modify Manager</h1>
+												<h1 class="modal-title" id="deleteModalLabel">Modify Car</h1>
 												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 													<span aria-hidden="true">&times;</span>
 												</button>
@@ -240,7 +240,7 @@
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-												<button type="button" class="btn btn-primary" onclick="AddManagerData();">Save changes</button>
+												<button type="button" class="btn btn-primary" onclick="AddCarData();">Save changes</button>
 											</div>
 										</div>
 									</div>
@@ -265,6 +265,7 @@
 	<!-- database_page JS -->
 	<script src='https://www.gstatic.com/firebasejs/5.7.0/firebase.js'></script>
 	<script src="assets/js/database_page.js"></script>
+	<script src="assets/js/login.js"></script>
 </body>
 
 </html>

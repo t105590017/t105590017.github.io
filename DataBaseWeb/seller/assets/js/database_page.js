@@ -8,6 +8,18 @@ var config = {
 };
 firebase.initializeApp(config);
 
+function getCookie(name) {
+    var strCookie = document.cookie;
+    console.log("getCookie = ", strCookie);
+    var arrCookie = strCookie.split("; ");
+    for (var i = 0; i < arrCookie.length; i++) {
+        var arr = arrCookie[i].split("=");
+        if (arr[0] == name)
+            return arr[1];
+    }
+    return "";
+}
+
 ///////////////////////////////
 ///                         ///
 ///     Database Person     ///
@@ -323,7 +335,7 @@ function Database_Person() {
 ///////////////////////////////
 
 
-document
+
 ////////////////////////////////////////////////////
 $(document).on("ready", function () {
     if ($.find("#Database_Person").length > 0)

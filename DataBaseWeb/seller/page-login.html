@@ -25,14 +25,14 @@
 
 <body>
 	<!-- WRAPPER -->
-	<div id="wrapper">
+	<div id="wrapper" class="Login_Page">
 		<div class="vertical-align-wrap">
 			<div class="vertical-align-middle">
 				<div class="auth-box ">
 					<div class="left">
 						<div class="content">
 							<div class="header">
-								<div class="logo text-center"><img src="../assets/img/logo.png" alt="Klorofil Logo"></div>
+								<div class="logo text-center"><img id="logo" src="../assets/img/logo.png" alt="Klorofil Logo"></div>
 								<p class="lead">Login to your account</p>
 							</div>
 							<form class="form-auth-small" action="index.php">
@@ -45,11 +45,9 @@
 									<input type="password" class="form-control" id="signin-password" value="" placeholder="Password">
 								</div>
 								<button type="button" class="btn btn-primary btn-lg btn-block" id="loginBtn">LOGIN</button>
-								<button type="button" class="btn btn-primary btn-lg btn-block" id="getBtn">Get</button>
 								<div class="bottom">
 									<span class="helper-text"><i class="fa fa-lock"></i> <a href="">Forgot password?</a></span>
 								</div>
-								<h1 id="testText">test</h1>
 							</form>
 						</div>
 					</div>
@@ -71,10 +69,10 @@
 	<script src="assets/vendor/jquery/jquery.min.js"></script>
 	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-	<script src="assets/js/login.js"></script>
 
 	<!-- database_page JS -->
 	<script src='https://www.gstatic.com/firebasejs/5.7.0/firebase.js'></script>
+	<script src="assets/js/login.js"></script>
 </body>
 
 </html>
