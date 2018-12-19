@@ -1,7 +1,36 @@
-//const 保存24hr
-const Timeliness = 24;
+var database = firebase.database();
+
+function LoginWithDatabase(local) {
+    identity = getQueryVariable("L", "Unknow");
+    account = getCookie(LoginAccountCookieName);
+    password = getCookie(LoginPasswordCookieName);
+    var dataNode = database.ref(identity);
+    dataNode.once('value').then(function (snapshot) {
+        var temp = snapshot.val();
+        for (id in temp) {
+            if (temp[id]['Account'] == account && temp[id]['Password'] == password)
+            if (local == "login") window.location="Home.html?L="+getQueryVariable("L","Unknow");
+        }
+        if (local != "login") window.location="Login.html?L="+getQueryVariable("L","Unknow");
+    });
+}
+
+function CheckLogin(local) {
+    if (getQueryVariable("L","Unknow") == "Test") {
+        console.log("IsLogin");
+        if (local == "login") window.location = "Home.html?L=Test";
+    }
+    else {
+        LoginWithDatabase(local)
+    }
+}
+
+//const 保存1天
+const Timeliness = 1;
 const TestAccount = "Test";
 const TestPassword = "0000";
+const LoginAccountCookieName = "LA";
+const LoginPasswordCookieName = "LP";
 
 //使用JS函數獲取url參數:
 function getQueryVariable(variable, notFindVal) {
@@ -16,15 +45,13 @@ function getQueryVariable(variable, notFindVal) {
 
 function LoginCookie() {
     var exp = new Date();
-    exp.setTime(exp.getTime() + 1000 * 60 * 60 * Timeliness); //这里表示保存24小时
-    console.log("LoginCookie_ ", $("#signin-Account").val(), $("#signin-password").val());
-    document.cookie = "LA=" + $("#signin-Account").val() + ";expires=" + exp.toGMTString()+"path=/";
-    document.cookie = "LP=" + $("#signin-password").val() + ";expires=" + exp.toGMTString();
+    exp.setTime(exp.getTime() + 1000 * 60 * 60 * Timeliness);
+    $.cookie(LoginAccountCookieName, $("#signin-Account").val(), { expires: Timeliness });
+    $.cookie(LoginPasswordCookieName, $("#signin-Password").val(), { expires: Timeliness });
 }
 
 function getCookie(name) {
     var strCookie = document.cookie;
-    console.log("getCookie = ", strCookie);
     var arrCookie = strCookie.split("; ");
     for (var i = 0; i < arrCookie.length; i++) {
         var arr = arrCookie[i].split("=");
@@ -34,37 +61,39 @@ function getCookie(name) {
     return "";
 }
 
-function IsLogin() {
-    if (getQueryVariable("Login","") == "Test" && getCookie("LA") == TestAccount && getCookie("LP") == TestPassword) {
-        console.log("IsLogin");
-        return true;
-    }
-    return false;
+if ($.find(".Login_Page").length > 0) {
+    CheckLogin("login");
+    $(document).on("ready", function () {
+        $("#signin-Account").val(getCookie(LoginAccountCookieName));
+        $("#signin-Password").val(getCookie(LoginPasswordCookieName));
+
+        $("#logout").click(function (e) {
+            e.preventDefault();
+        });
+
+        $("#logo").click(function (e) {
+            e.preventDefault();
+            window.location.assign("../index.html");
+        });
+
+        $("#loginBtn").click(function (e) {
+            e.preventDefault();
+            LoginCookie()
+            CheckLogin("login");
+        });
+
+        $(".lead").text(getQueryVariable("L", "Unknow") + " Login");
+    });
 }
+else {
+    CheckLogin("");
 
-$(document).on("ready", function () {
-    console.log($("#wrapper")[0].classList[0] + "read = > LA=", getCookie("LA"), " LP=", getCookie("LP"));
-    $("#signin-Account").val("");
-    $("#signin-password").val("");
-
-    if(IsLogin() && $.find(".Login_Page").length > 0){
-        window.location.assign("page-Home.html");
-    }
-
-    $("#logo").click(function (e) {
-        e.preventDefault();
-        console.log("click");
+    $(document).ready(function () {
+        $("#logout").click(function (e) {
+            e.preventDefault();
+            $.removeCookie(LoginAccountCookieName);
+            $.removeCookie(LoginPasswordCookieName);
+            window.location.assign("../index.html");
+        });
     });
-
-    $("#loginBtn").click(function (e) {
-        e.preventDefault();
-        LoginCookie()
-        console.log("LA=", getCookie("LA"), " LP=", getCookie("LP"));
-    });
-
-    $(".lead").text(getQueryVariable("Login", "Unknow") + " Login");
-    $("#logout").click(function (e) { 
-        e.preventDefault();
-        
-    });
-});
+}

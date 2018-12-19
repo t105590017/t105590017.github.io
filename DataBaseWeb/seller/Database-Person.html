@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Database-Person</title>
+	<title>Control</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -83,10 +83,10 @@
 			<div class="sidebar-scroll">
 				<nav>
 					<ul class="nav">
-						<li><a href=""><i class="fas fa-home"></i><span>Home</span></a></li>
-						<li><a href=""><i class="fas fa-cogs"></i><span>Account</span></a></li>
-						<li><a href=""><i class="fas fa-th-large"></i><span>Inventory</span></a></li>
-						<li><a href=""><i class="lnr lnr-file-empty"></i> <span>Pages</span></a></li>
+						<li><a id="control_home" href=""><i class="fas fa-home"></i><span>Home</span></a></li>
+						<li><a id="control_account" href=""><i class="fas fa-cogs"></i><span>Account</span></a></li>
+						<li><a id="control_inventory" href=""><i class="fas fa-th-large"></i><span>Inventory</span></a></li>
+						<li><a id="control_page" href=""><i class="lnr lnr-file-empty"></i> <span>Page</span></a></li>
 						<li>
 							<a href="#subPages" data-toggle="collapse" class="collapsed active">
 								<i class="fas fa-database"></i><span>Database</span>
@@ -94,9 +94,9 @@
 							</a>
 							<div id="subPages" class="collapse in">
 								<ul class="nav">
-									<li><a href="Database-Person.html" class="active">Person</a></li>
-									<li><a href="Database-Car.html" class="">Car</a></li>
-									<li><a href="" class="">Feedback</a></li>
+									<li><a id="control_person" href="" class="active">Person</a></li>
+									<li><a id="control_car" href="" class="">Car</a></li>
+									<li><a id="control_feedback" href="" class="">Feedback</a></li>
 								</ul>
 							</div>
 						</li>
@@ -124,7 +124,7 @@
 												<h3 class="panel-title">Add Manager</h3>
 											</div>
 											<div class="panel-body">
-												<label for="addId">ID：</label>
+												<label for="addId">Id：</label>
 												<input id="addId" type="text" class="form-control">
 												<br>
 												<label for="addName">Name：</label>
@@ -186,17 +186,8 @@
 								<div class="panel-body">
 									<table class="table table-hover">
 										<thead>
-											<tr id="Manager_Table_Head">
-												<th>Id</th>
-												<th>Name</th>
-												<th>Account</th>
-												<th>Password</th>
-												<th>Sex</th>
-												<th>Phone</th>
-												<th>Email</th>
-												<th>Birthday</th>
-												<th>Class</th>
-												<th>Operation</th>
+											<tr id="Manager_Table_Header">
+												<!-- database_page.js Manager -->
 											</tr>
 										</thead>
 										<tbody id="Manager_Table_Data">
@@ -214,7 +205,7 @@
 													<h3 class="panel-title">Modify Manager</h3>
 												</div>
 												<div class="panel-body">
-													<label for="modifyId">ID：</label>
+													<label for="modifyId">Id：</label>
 													<input id="modifyManagerId" type="text" class="modifyId form-control">
 													<br>
 													<label for="modifyName">Name：</label>
@@ -276,16 +267,8 @@
 								<div class="panel-body">
 									<table class="table table-hover">
 										<thead>
-											<tr id="Member_Table_Head">
-												<th>Id</th>
-												<th>Name</th>
-												<th>Account</th>
-												<th>Password</th>
-												<th>Sex</th>
-												<th>Phone</th>
-												<th>Email</th>
-												<th>Birthday</th>
-												<th>Operation</th>
+											<tr id="Member_Table_Header">
+												<!-- database_page.js Member -->
 											</tr>
 										</thead>
 										<tbody id="Member_Table_Data">
@@ -293,7 +276,8 @@
 										</tbody>
 									</table>
 								</div>
-								<div class="modal fade" id="modifyMemberModal" tabindex="-1" role="dialog" aria-labelledby="modifyManagerModalLabel"
+								<!-- modifyMemberModal -->
+								<div class="modal fade" id="modifyMemberModal" tabindex="-1" role="dialog" aria-labelledby="modifyMemberModalLabel"
 								 aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
@@ -302,7 +286,7 @@
 													<h3 class="panel-title">Modify Member</h3>
 												</div>
 												<div class="panel-body">
-													<label for="modifyId">ID：</label>
+													<label for="modifyId">Id：</label>
 													<input id="modifyMemberId" type="text" class="modifyId form-control">
 													<br>
 													<label for="modifyName">Name：</label>
@@ -336,7 +320,7 @@
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-												<button type="button" class="btn btn-primary" id="ModifyManager">Modify Manager</button>
+												<button type="button" class="btn btn-primary" id="ModifyMember">Modify Member</button>
 											</div>
 										</div>
 									</div>
@@ -358,15 +342,8 @@
 								<div class="panel-body">
 									<table class="table table-hover">
 										<thead>
-											<tr id="Order_Table_Head">
-												<th>Id</th>
-												<th>Time</th>
-												<th>MemberId</th>
-												<th>ManagerId</th>
-												<th>CarId</th>
-												<th>Price</th>
-												<th>DeliveryTime</th>
-												<th>State</th>
+											<tr id="Order_Table_Header">
+												<!-- database_page.js Manager -->
 											</tr>
 										</thead>
 										<tbody id="Order_Table_Data">
@@ -391,11 +368,8 @@
 								<div class="panel-body">
 									<table class="table table-hover">
 										<thead>
-											<tr id="Manufacturer_Table_Head">
-												<th>Id</th>
-												<th>Brand</th>
-												<th>Phone</th>
-												<th>Email</th>
+											<tr id="Manufacturer_Table_Header">
+												<!-- database_page.js Manager -->
 											</tr>
 										</thead>
 										<tbody id="Manufacturer_Table_Data">
@@ -406,10 +380,10 @@
 							</div>
 						</div>
 					</div>
-					
+
 					<!-- deleteModal -->
 					<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
-						aria-hidden="true">
+					 aria-hidden="true">
 						<div class="modal-dialog modal-dialog-centered" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
@@ -435,12 +409,14 @@
 	<!-- END WRAPPER -->
 	<!-- Javascript -->
 	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="../assets/js/jquery.cookie.js"></script>
 	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 	<script src="assets/scripts/klorofil-common.js"></script>
 
 	<!-- database_page JS -->
 	<script src='https://www.gstatic.com/firebasejs/5.7.0/firebase.js'></script>
+	<script src="assets/js/control.js"></script>
 	<script src="assets/js/database_page.js"></script>
 	<script src="assets/js/login.js"></script>
 </body>

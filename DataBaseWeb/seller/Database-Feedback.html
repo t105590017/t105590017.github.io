@@ -26,7 +26,7 @@
 
 <body>
 	<!-- WRAPPER -->
-	<div id="wrapper" class="Car_Database">
+	<div id="wrapper" class="Feedback_Database">
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="brand">
@@ -95,8 +95,8 @@
 							<div id="subPages" class="collapse in">
 								<ul class="nav">
 									<li><a id="control_person" href="" class="">Person</a></li>
-									<li><a id="control_car" href="" class="active">Car</a></li>
-									<li><a id="control_feedback" href="" class="">Feedback</a></li>
+									<li><a id="control_car" href="" class="">Car</a></li>
+									<li><a id="control_feedback" href="" class="active">Feedback</a></li>
 								</ul>
 							</div>
 						</li>
@@ -107,21 +107,19 @@
 		<!-- END LEFT SIDEBAR -->
 
 		<!-- MAIN -->
-		<div class="main">
+		<div id="Database_Feedback" class="main">
 			<!-- MAIN CONTENT -->
 			<div class="main-content">
 				<div class="container-fluid">
-					<h3 class="page-title">Cars</h3>
+					<h3 class="page-title">Feedbacks</h3>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="panel">
 								<div class="panel-heading">
-									<h3 class="panel-title">Car</h3>
+									<h3 class="panel-title">Feedback</h3>
 									<div class="right">
-										<button type="button" class="btn btn-info" data-toggle="modal" data-target="#addModal"><i class="fa fa-plus-circle"></i>
-											Add</button>
-										<input id="CarSearch" type="search" class="form-control form-control-sm" placeholder="Search" onkeyup="TableChange('Car')"
-										 onkeydown="TableChange('Car')">
+										<input id="FeedbackSearch" type="search" class="form-control form-control-sm" placeholder="Search" onkeyup="TableChange('Feedback')"
+										 onkeydown="TableChange('Feedback')">
 										<button type="button" class="btn-toggle-collapse">
 											<i class="lnr lnr-chevron-up"></i>
 										</button>
@@ -130,120 +128,86 @@
 								<div class="panel-body">
 									<table class="table table-hover">
 										<thead>
-											<tr id="Car_Table_Header">
-												<th>Id</th>
-												<th>Photo</th>
-												<th>Name</th>
-												<th>Year<th>
-												<th>Make</th>
-												<th>Model</th>
-												<th>Price</th>
-												<th>Engine</th>
-												<th>Transmission</th>
-												<th>Top Speed</th>
+											<tr id="Feedback_Table_Header">
 											</tr>
 										</thead>
-										<tbody id="Car_Table_Data">
-											<!-- database_page.js Car -->
+										<tbody id="Feedback_Table_Data">
+											<!-- database_page.js Feedback -->
 										</tbody>
 									</table>
 								</div>
-								<!-- addModal -->
-								<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+								<!-- modifyFeedbackModal -->
+								<div class="modal fade" id="modifyFeedbackModal" tabindex="-1" role="dialog" aria-labelledby="modifyFeedbackModalLabel"
+								 aria-hidden="true">
 									<div class="modal-dialog" role="document">
 										<div class="modal-content">
 											<div class="panel">
 												<div class="panel-heading">
-													<h3 class="panel-title">Add Car</h3>
+													<h3 class="panel-title">Modify Feedback</h3>
 												</div>
 												<div class="panel-body">
-													<label for="addId">ID：</label>
-													<input id="addId" type="text" class="form-control">
+													<label for="modifyId">ID：</label>
+													<input id="modifyFeedbackId" type="text" class="modifyId form-control">
 													<br>
-													<label for="addName">Name：</label>
-													<input id="addName" type="text" class="form-control">
+													<label for="modifyName">Name：</label>
+													<input id="modifyFeedbackName" type="text" class="modifyName form-control">
 													<br>
-													<label for="addAccount">Account：</label>
-													<input id="addAccount" type="text" class="form-control">
+													<label for="modifyAccount">Account：</label>
+													<input id="modifyFeedbackAccount" type="text" class="modifyAccount form-control">
 													<br>
-													<label for="addPassword">Password：</label>
-													<input id="addPassword" type="password" class="form-control">
+													<label for="modifyPassword">Password：</label>
+													<input id="modifyFeedbackPassword" type="password" class="modifyPassword form-control">
 													<br>
-													<label for="addPhone">Phone：</label>
-													<input id="addPhone" type="text" class="form-control">
+													<label for="modifyPhone">Phone：</label>
+													<input id="modifyFeedbackPhone" type="text" class="modifyPhone form-control">
 													<br>
-													<label for="addEmail">Email：</label>
-													<input id="addEmail" type="text" class="form-control">
+													<label for="modifyEmail">Email：</label>
+													<input id="modifyFeedbackEmail" type="text" class="modifyEmail form-control">
 													<br>
-													<label for="addBirthday">Birthday：</label>
-													<input id="addBirthday" type="text" class="form-control">
+													<label for="modifyBirthday">Birthday：</label>
+													<input id="modifyFeedbackBirthday" type="text" class="modifyBirthday form-control">
 													<br>
-													<label for="addClass">Class：</label>
-													<select id="addClass" class="form-control">
+													<label for="modifyClass">Class：</label>
+													<select id="modifyFeedbackClass" class="modifyClass form-control">
 														<option value="0">0</option>
 														<option value="1">1</option>
 													</select>
 													<br>
 													<label>Sex：</label>
 													<label class="fancy-radio">
-														<input name="gender" value="1" type="radio">
+														<input id="modifyFeedbackmen" class="modifySex" name="modifyGender" value="men" type="radio">
 														<span><i></i>Male</span>
 													</label>
 													<label class="fancy-radio">
-														<input name="gender" value="0" type="radio">
+														<input id="modifyFeedbackwomen" class="modifySex" name="modifyGender" value="women" type="radio">
 														<span><i></i>Female</span>
 													</label>
 												</div>
 											</div>
-
 											<div class="modal-footer">
 												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-												<button type="button" class="btn btn-primary" onclick="AddCarData();">Add Car</button>
+												<button type="button" class="btn btn-primary" id="ModifyFeedback">Modify Feedback</button>
 											</div>
 										</div>
 									</div>
 								</div>
-								<!-- modifyModal -->
-								<div class="modal fade" id="modifyModal" tabindex="-1" role="dialog" aria-labelledby="modifyModalLabel"
-								 aria-hidden="true">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h1 class="modal-title" id="modifyModalLabel">Modify Car</h1>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												...
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-												<button type="button" class="btn btn-primary" onclick="AddCarData();">Save changes</button>
-											</div>
-										</div>
-									</div>
+							</div>
+						</div>
+					</div>
+					<!-- deleteModal -->
+					<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
+						aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h1 class="modal-title">Delete Confirm</h1>
 								</div>
-								<!-- deleteModal -->
-								<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel"
-								 aria-hidden="true">
-									<div class="modal-dialog" role="document">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h1 class="modal-title" id="deleteModalLabel">Modify Car</h1>
-												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-													<span aria-hidden="true">&times;</span>
-												</button>
-											</div>
-											<div class="modal-body">
-												...
-											</div>
-											<div class="modal-footer">
-												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-												<button type="button" class="btn btn-primary" onclick="AddCarData();">Save changes</button>
-											</div>
-										</div>
-									</div>
+								<div class="modal-body" id="deleteMessage">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+									<button type="button" class="btn btn-primary" id="deleteYes">Yes</button>
 								</div>
 							</div>
 						</div>
