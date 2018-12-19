@@ -1,3 +1,4 @@
+// v1
 var database = firebase.database();
 
 function LoginWithDatabase(local) {
@@ -8,15 +9,22 @@ function LoginWithDatabase(local) {
     dataNode.once('value').then(function (snapshot) {
         var temp = snapshot.val();
         for (id in temp) {
-            if (temp[id]['Account'] == account && temp[id]['Password'] == password)
-            if (local == "login") window.location="Home.html?L="+getQueryVariable("L","Unknow");
+            if (temp[id]['Account'] == account && temp[id]['Password'] == password) {
+                if (local == "login") {
+                    window.location = "Home.html?L=" + getQueryVariable("L", "Unknow");
+                }
+                return;
+            }
         }
-        if (local != "login") window.location="Login.html?L="+getQueryVariable("L","Unknow");
+        if (local != "login") {
+            window.location = "Login.html?L=" + getQueryVariable("L", "Unknow");
+        }
     });
 }
 
 function CheckLogin(local) {
-    if (getQueryVariable("L","Unknow") == "Test") {
+    console.log(getCookie(LoginAccountCookieName), "  ", getCookie(LoginPasswordCookieName));
+    if (getQueryVariable("L", "Unknow") == "Test") {
         console.log("IsLogin");
         if (local == "login") window.location = "Home.html?L=Test";
     }
@@ -32,6 +40,7 @@ const TestPassword = "0000";
 const LoginAccountCookieName = "LA";
 const LoginPasswordCookieName = "LP";
 
+
 //使用JS函數獲取url參數:
 function getQueryVariable(variable, notFindVal) {
     var query = window.location.search.substring(1);
@@ -46,8 +55,8 @@ function getQueryVariable(variable, notFindVal) {
 function LoginCookie() {
     var exp = new Date();
     exp.setTime(exp.getTime() + 1000 * 60 * 60 * Timeliness);
-    $.cookie(LoginAccountCookieName, $("#signin-Account").val(), { expires: Timeliness });
-    $.cookie(LoginPasswordCookieName, $("#signin-Password").val(), { expires: Timeliness });
+    $.cookie(LoginAccountCookieName, $("#signin-Account").val(), { expires: Timeliness});
+    $.cookie(LoginPasswordCookieName, $("#signin-Password").val(), { expires: Timeliness});
 }
 
 function getCookie(name) {
@@ -87,7 +96,6 @@ if ($.find(".Login_Page").length > 0) {
 }
 else {
     CheckLogin("");
-
     $(document).ready(function () {
         $("#logout").click(function (e) {
             e.preventDefault();
